@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohini Paramanantra Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Login Page -->
+        <div id="login-page" class="page active">
+            <div class="container">
+                <h1>Welcome to Rohini Paramanantra</h1>
+                <form id="login-form">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            </div>
+        </div>
+
+        <!-- Register Page -->
+        <div id="register-page" class="page">
+            <div class="container">
+                <h1>Register for Rohini Paramanantra</h1>
+                <form id="register-form">
+                    <input type="text" id="reg-username" placeholder="Username" required>
+                    <input type="email" id="reg-email" placeholder="Email" required>
+                    <input type="password" id="reg-password" placeholder="Password" required>
+                    <input type="password" id="reg-confirm-password" placeholder="Confirm Password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="home-page" class="page">
+            <nav>
+                <div class="container">
+                    <h1>Rohini Paramanantra</h1>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="rooms">Rooms</a></li>
+                        <li><a href="#" data-page="dining">Dining</a></li>
+                        <li><a href="#" data-page="amenities">Amenities</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                        <li><a href="#" id="logout">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero">
+                <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Luxury Hotel">
+                <div class="hero-content">
+                    <h2>Welcome to Rohini Paramanantra</h2>
+                    <p>Experience unparalleled luxury and comfort in the heart of the city.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="feature-grid">
+                    <div class="feature">
+                        <i data-lucide="bed"></i>
+                        <h3>Luxurious Rooms</h3>
+                        <p>Indulge in our spacious and elegantly designed rooms.</p>
+                    </div>
+                    <div class="feature">
+                        <i data-lucide="utensils"></i>
+                        <h3>Fine Dining</h3>
+                        <p>Savor exquisite cuisine at our world-class restaurants.</p>
+                    </div>
+                    <div class="feature">
+                        <i data-lucide="dumbbell"></i>
+                        <h3>Fitness Center</h3>
+                        <p>Stay fit with our state-of-the-art gym and wellness facilities.</p>
+                    </div>
+                    <div class="feature">
+                        <i data-lucide="map-pin"></i>
+                        <h3>Prime Location</h3>
+                        <p>Conveniently located near major attractions and business districts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rooms Page -->
+        <div id="rooms-page" class="page">
+            <div class="container">
+                <h2>Our Luxurious Rooms</h2>
+                <div class="room-grid">
+                    <div class="room">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Deluxe Room">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious and comfortable, perfect for leisure or business travelers.</p>
+                    </div>
+                    <div class="room">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Suite">
+                        <h3>Executive Suite</h3>
+                        <p>Luxurious suite with separate living area and stunning city views.</p>
+                    </div>
+                    <div class="room">
+                        <img src="https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" alt="Presidential Suite">
+                        <h3>Presidential Suite</h3>
+                        <p>The epitome of luxury with personalized service and amenities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dining Page -->
+        <div id="dining-page" class="page">
+            <div class="container">
+                <h2>Exquisite Dining Experience</h2>
+                <div class="dining-grid">
+                    <div class="restaurant">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Fine Dining Restaurant">
+                        <h3>The Grand Pavilion</h3>
+                        <p>Experience fine dining with a menu crafted by world-renowned chefs.</p>
+                    </div>
+                    <div class="restaurant">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80" alt="Rooftop Bar">
+                        <h3>Skyline Lounge</h3>
+                        <p>Enjoy cocktails and light bites with breathtaking views of the city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Amenities Page -->
+        <div id="amenities-page" class="page">
+            <div class="container">
+                <h2>Hotel Amenities</h2>
+                <div class="amenities-grid">
+                    <div class="amenity">
+                        <img src="https://images.unsplash.com/photo-1570799983578-5079c3f4d0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80" alt="Spa">
+                        <h3>Luxury Spa</h3>
+                        <p>Rejuvenate your body and mind with our world-class spa treatments.</p>
+                    </div>
+                    <div class="amenity">
+                        <img src="https://images.unsplash.com/photo-1574068468668-a05a11f871da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Fitness Center">
+                        <h3>State-of-the-art Fitness Center</h3>
+                        <p>Stay fit with our modern equipment and personal training services.</p>
+                    </div>
+                    <div class="amenity">
+                        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Swimming Pool">
+                        <h3>Infinity Pool</h3>
+                        <p>Relax and unwind in our stunning rooftop infinity pool.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <h3>Rohini Sonawane</h3>
+                    <p>General Manager</p>
+                    <p>Email: rohini.sonawane@rohiniparamanantra.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
